@@ -97,7 +97,7 @@ Accept: application/vnd.heroku+json; version=3
 * `200`: `GET`请求成功，及`DELETE`或`PATCH`同步请求完成，或者`PUT`同步更新一个已存在的资源
 * `201`: `POST` 同步请求完成，或者`PUT`同步创建一个新的资源
 * `202`: `POST`，`PUT`，`DELETE`，或`PATCH`请求接收，将被异步处理
-* `206`: `GET` 请求成功，但是只返回一部分，参考：[上文中范围分页](#按范围分页)
+* `206`: `GET` 请求成功，但是只返回一部分，参考：[上文中范围分页](#通过请求中的范围range拆分大的响应)
 
 使用身份认证(authentication)和授权(authorization)错误码时需要注意：
 
