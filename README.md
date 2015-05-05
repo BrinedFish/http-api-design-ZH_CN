@@ -20,7 +20,7 @@
 
 ## 目录
 
-* [基础\(Foundations\)](#基础\(foundations\))
+* [基础(Foundations)](#基础foundations)
   * [隔离关注点](#隔离关注点)
   * [强制使用安全连接](#强制使用安全连接)
   * [强制头信息Accept中提供版本号](#强制头信息accept中提供版本号)
