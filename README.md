@@ -49,7 +49,7 @@
   * [提供可执行的例子](#提供可执行的例子)
   * [描述稳定性](#描述稳定性)
 
-### 基础
+### 基础(Foundations)
 
 #### 隔离关注点
 设计时通过将请求和响应之间的不同部分隔离来让事情变得简单。保持简单的规则让我们能更关注在一些更大的更困难的问题上。
@@ -88,7 +88,7 @@ Accept: application/vnd.heroku+json; version=3
 
 一个大的响应应该通过多个请求使用`Range`头信息来拆分，并指定如何取得。详细的请求和响应的头信息(header)，状态码(status code)，范围(limit)，排序(ordering)和迭代(iteration)等，参考[Heroku Platform API discussion of Ranges](https://devcenter.heroku.com/articles/platform-api-reference#ranges).
 
-### 请求-Requests
+### 请求(Requests)
 
 #### 返回合适的状态码
 
@@ -229,7 +229,7 @@ $ curl https://service.com/apps/www-prod
 /dynos/{dyno_id}
 ```
 
-### 响应
+### 响应(Responses)
 
 #### 提供资源的(UU)ID
 
