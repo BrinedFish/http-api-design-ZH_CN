@@ -102,13 +102,18 @@ Accept: application/vnd.heroku+json; version=3
 使用身份认证(authentication)和授权(authorization)错误码时需要注意：
 
 * `401 Unauthorized`: 用户未认证，请求失败
+* `402 Payment Required`: 需要付款
 * `403 Forbidden`: 用户无权限访问该资源，请求失败
 
 当用户请求错误时，提供合适的状态码可以提供额外的信息：
 
+* `404 Not Found`: 资源不存在
+* `406 Not Acceptable`: 不能接受的请求，如header不满足条件
+* `416 Requested Range Not Satisfiable`: 请求范围不满足
 * `422 Unprocessable Entity`: 请求被服务器正确解析，但是包含无效字段
 * `429 Too Many Requests`: 因为访问频繁，你已经被限制访问，稍后重试
 * `500 Internal Server Error`: 服务器错误，确认状态并报告问题
+* `503 Service Unavailable`: api无效，检查请求url
 
 对于用户错误和服务器错误情况状态码，参考：  [HTTP response code spec](https://tools.ietf.org/html/rfc7231#section-6)
 
