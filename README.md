@@ -248,7 +248,7 @@ $ curl https://service.com/apps/www-prod
 
 #### 提供标准的时间戳
 
-为资源提供默认的创建时间 `created_at` 和更新时间 `updated_at`，例如:
+为资源提供默认的创建时间 `created_at` 和更新时间 `updated_at`，如果需要提供删除时间 `deleted_at`，例如:
 
 ```json
 {
