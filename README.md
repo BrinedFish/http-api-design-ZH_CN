@@ -325,7 +325,7 @@ HTTP/1.1 429 Too Many Requests
 
 ```json
 {
-  "id":      "rate_limit",
+  "key":      "rate_limit",
   "message": "Account reached its API rate limit.",
   "url":     "https://docs.service.com/rate-limits"
 }
