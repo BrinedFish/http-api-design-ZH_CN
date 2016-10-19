@@ -108,9 +108,11 @@ Accept: application/vnd.heroku+json; version=3
 当用户请求错误时，提供合适的状态码可以提供额外的信息：
 
 * `400 Bad Request`: 请求错误,没有具体的状态处理时使用 
-* `404 Not Found`: 资源不存在
+* `404 Not Found`: 访问资源不存在
+* `405 Method Not Allowed`: 不支持的请求方法
 * `406 Not Acceptable`: 不能接受的请求,如header不满足条件
 * `408 Request Timeout`: 请求超时 
+* `415 Unsupported Media Type`: 不支持的请求数据类型
 * `416 Requested Range Not Satisfiable`: 请求范围不满足
 * `422 Unprocessable Entity`: 请求被服务器正确解析,但是包含无效字段
 * `429 Too Many Requests`: 因为访问频繁,你已经被限制访问,稍后重试
