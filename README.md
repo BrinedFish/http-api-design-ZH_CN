@@ -108,7 +108,7 @@ Accept: application/vnd.heroku+json; version=3
 当用户请求错误时，提供合适的状态码可以提供额外的信息：
 
 * `400 Bad Request`: 请求错误,没有具体的状态处理时使用 
-* `404 Not Found`: 访问资源不存在
+* `404 Not Found`: 访问资源/接口不存在
 * `405 Method Not Allowed`: 不支持的请求方法
 * `406 Not Acceptable`: 不能接受的请求,如header不满足条件
 * `408 Request Timeout`: 请求超时 
@@ -118,11 +118,12 @@ Accept: application/vnd.heroku+json; version=3
 * `429 Too Many Requests`: 因为访问频繁,你已经被限制访问,稍后重试
 * `500 Internal Server Error`: 服务器错误,确认状态并报告问题状态处理时使用
 * `502 Bad Gateway`: 网关错误,服务器访问不到 
-* `503 Service Unavailable`: api无效,检查请求url
+* `503 Service Unavailable`: 服务无效或不可访问
 * `504 Gateway Timeout`: 网关超时,服务响应超时 
  
 当跳转时,正确的状态码才能被浏览器或服务器正确处理  
 * `301 Moved Permanently`: 永久跳转到新地址 
+* `302 Found`: 暂时跳转到新地址
 * `304 Not Modified`: 请求内容未更新,使用本地缓存,服务器不返回数据 
 
 对于用户错误和服务器错误情况状态码，参考：  [HTTP response code spec](https://tools.ietf.org/html/rfc7231#section-6)
